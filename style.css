@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+button{
+  cursor: pointer;
+}
+.top{
+  padding: 2rem 1rem 0 1rem;
+}
+.container{
+    width: 100vw;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#dot{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background-color: black;
+  }
+  nav{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+  }
+  .menuline{
+    width:100%;
+    height:3px;
+    background-color:black
+  }
+  .menu{
+    width:20px;
+    height:13px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: flex-end;
+  }
+  .links{
+    display: none;
+  }
+  .menu div:nth-child(1){
+    width: 50%;
+  }
+  header{
+    margin: 2rem 0 -5.5rem 0;
+    padding: .5rem 0 5rem .9rem;
+    border-left: 2.6px solid black;
+  }
+  header h1{
+    font-weight: 500;
+    font-size: 1.7rem;
+  }
+  .headerSub{
+    display: none;
+  }
+  header button{    
+    background-color: rgb(46, 43, 43);
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    display: flex;
+  }
+  header button:active, header button:focus{
+    outline-style: none;
+
+  }
+  header button svg{
+    margin-left: 1rem;
+    height: 1.5rem;
+  }
+  .tops{
+    background: url('./images/girlheader.jpg');
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: right;
+    box-sizing: border-box;
+    padding: 130px 0px 5rem 0px;
+  }
+  .topSales{
+    position: relative;
+    width: 12rem;
+  }
+
+  .item2{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 30px;
+    z-index: 3;
+    width: inherit;
+  }
+  .topSales .item{
+    width: inherit;
+    margin-right: 30px;
+    background-color: white;
+    display: flex;
+    padding: .5rem;
+    box-shadow: -1rem 1rem 2rem rgba(0, 0, 0, 0.087);
+  }
+  .item .itemImage{
+    width: 50px;
+    height: 50px;
+    margin-right: .5rem;
+    background-color: rgb(238, 238, 228);
+  }
+  .shades{
+    background-image: url('./images/glasses.jpg');
+    background-size: contain;
+    background-position: center;
+  }
+  .skirt{
+    background-image: url('./images/skirt.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .itemText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: .7rem;
+    font-weight: bolder;
+  }
+  .stars svg{
+    fill: black;
+    width: .6rem;
+  }
+  .socialProof{
+    display: flex;
+    font-weight: bolder;
+    padding: 1rem;
+    padding-top: 0;
+  }
+  .socialProof .cust, .socialProof .band{
+    width: 50%;
+  }
+  .socialProof p{
+    font-size: .8rem;
+  }
+  footer{
+    margin-top: 2rem;
+    flex-grow: 1;
+    width: 100%;
+    background-color: rgb(46, 43, 43);
+  }
+  .footContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footContent .ww{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .footheader{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .footContent p{
+    font-size: small;
+  }
+  .footContent .worldImg{
+    margin-bottom: 1rem;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+  }
+  @media (min-width: 600px){
+
+    .nav{
+      position: relative;
+    }
+    .menu{
+      display: none;
+    }
+    .links{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+    }
+    .links a{
+      display: inline-block;
+      margin: 0 1rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    header{
+      padding: 3rem;
+    } 
+    header h1{
+      font-size:4.7vmax;
+    }
+    .headerSub{
+      display: block;
+      font-size: 1.3vmax;
+      margin: 2rem 0;
+    }
+    .wrapper{
+      position: relative;
+      height: 100vh;
+    }
+    header{
+      height: calc(100% - 50px);
+      margin: 3rem 0 0 0 ;
+    }
+    header button{
+      font-size: 1.6rem;
+    }
+    .top{
+      height: calc(100vh -50px);
+      position: relative;
+      padding: 3rem 3rem;
+    }
+    .tops{
+      position: absolute;
+      z-index: -1;
+      width: 50%;
+      background-size: contain;
+      height: 100%;
+      top:0;
+      right: 0;
+      padding: 20% 0 0 0;
+    }
+    .topSales .item{
+      margin-left: -70%;
+      padding: 1.3rem;
+      padding-right: 2rem;
+      width: 400px;
+    }
+    .itemText{
+      font-size: 1.6rem;
+    }
+    .topSales{
+      width: 20rem;
+    }
+    .topSales .itemImage{
+      width: 7rem;
+      height: 7rem;
+      margin-right: 1rem;
+      display: inline-block;
+    }
+    .topSales .item2{
+      margin-left: -20%;
+      margin-top: 5rem;
+
+    }
+    
+    .socialProof{
+      width: 30%;
+      position: absolute;
+      bottom: 13rem;
+      padding: 3rem;
+    }
+    .socialProof p, .socialProof h2{
+      font-size: 1.5rem;
+    }
+    .socialProof h2{
+      font-weight: bolder;
+      font-size: 1.6rem;
+    }
+    footer{
+      display: block;
+      width: 100vw;
+    }
+  }
